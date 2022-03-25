@@ -36,7 +36,7 @@ $(function(){
         // 阻止默认行为
         e.preventDefault();
         // 发起post请求
-        $.post('http://www.liulongbin.top:3007/api/reguser',
+        $.post('/api/reguser',
         {username:$('#reg_user').val(),password:$('#reg_pwd').val()},
         function(res){
            if(res.status!==0)
@@ -53,7 +53,7 @@ $(function(){
         // 发起post请求
         $.ajax({
             type:'post',
-            url:'http://www.liulongbin.top:3007/api/login',
+            url:'/api/login',
             data:$("#login_form").serialize(),
             success:function(res){
                if(res.status!==0)
