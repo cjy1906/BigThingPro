@@ -62,7 +62,6 @@ $(function(){
                layer.msg("登录成功！");
             //    token为登录成功的权限值，需保存起来
             localStorage.setItem('token',res.token);
-
                location.href="./index.html";
             }
         })
