@@ -33,7 +33,7 @@ function senderHead(user){ //渲染头像与用户名
     var name=user.nickname || user.username;  //有昵称先渲染昵称
     $("#welcome").html('欢迎&nbsp;&nbsp;'+name);  //渲染欢迎用户
     if(user.user_pic!==null){                  //渲染头像  
-        $(".layui-nav-img").css('src',user.user_pic).show;
+        $(".layui-nav-img").attr('src',user.user_pic).show;
         $('.textHead').hide();
     }else{
         $(".layui-nav-img").hide();
